@@ -1,11 +1,20 @@
 ---
 title: ESS 330 Project Proposals
 authors:
-  - name: Norah Jones
-    affiliation: The University
+  - name: Grace Rinehart
+    affiliation: Colorado State University
     roles: writing
     corresponding: true
+  - name: Kendall Landwehr
+    affiliation: Colorado State University
+    roles: research
+    corresponding: false
+  - name: Andrew Zimbelman
+    affiliation: Colorado State University
+    roles: data collection & analysis
+    corresponding: false
 bibliography: references.bib
+csl: apa.csl
 ---
 
 ## Section
