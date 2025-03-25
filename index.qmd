@@ -15,7 +15,302 @@ authors:
     corresponding: false
 bibliography: references.bib
 csl: apa.csl
+editor: 
+  markdown: 
+    wrap: 72
 ---
 
-## Section
-This is a simple placeholder for the manuscript's main document [@knuth84].
+# Grace Proposal 1
+
+Title: Analyzing Correlations Between Suicide Rates and Median Household
+Income in Colorado Counties
+
+Income is often a large stressor for people all over the country. This
+increase in stress can cause a decline in one’s mental health, and in
+turn, lead someone to commit suicide. Income and suicide rates have been
+linked in research for quite a long time. There is evidence that higher
+income and more income security are associated with lower rates of
+suicide, and vice versa (@Shields-Zeeman2022). Additionally, over 75% of
+global suicides occur in low- and middle-income countries (@Lemmi2016).
+Providing income security through policies like debt relief, increased
+minimum wages, and tax credits has been shown to decrease mental health
+stress for families and individuals (@Shields-Zeeman2022). Analyzing the
+correlation between suicide and income is not new, but taking a closer
+look at Colorado counties will allow for more specific policy-making
+actions to take place within the state and its counties.
+
+Research objective/question/hypothesis: The research objective is to
+look at the correlation of suicide rates to the median household income
+of Colorado counties. The hypothesis is that counties with lower incomes
+will have higher suicide rates than those with higher incomes. Some
+analyses that could be used to test this hypothesis include performing a
+correlation analysis and using a simple linear regression model.
+
+Proposed Methods: This study will use one data set from the Colorado
+Department of Public Health
+([data](https://cohealthviz.dphe.state.co.us/t/HealthInformaticsPublic/views/COVDRSSuicideDashboardAllYearsExcludesRace/Story1?%3Aembed=y&%3Aiid=1&%3AisGuestRedirectFromVizportal=y))
+and one from the National Institute of Health
+([data](https://hdpulse.nimhd.nih.gov/data-portal/social/map?socialtopic=030&socialtopic_options=social_6&demo=00011&demo_options=income_3&race=00&race_options=race_7&sex=0&sex_options=sexboth_1&age=001&age_options=ageall_1&statefips=08&statefips_options=area_states)).
+The scope of this study will be spatial, focused specifically on
+Colorado. The analysis will be conducted at the county level, as that
+variable is present in both data sets and will be used to join the two
+data sets together. Not all counties have suicide rate data, so those
+will be filtered out during analysis. Some statistical tests that could
+be used for analyzing the hypothesis are a correlation analysis and
+either a T-test or Wilcoxon test depending on whether or not the data is
+normally distributed.
+
+Expected Outcomes: It is expected that counties with higher incomes will
+have lower rates of suicide. Knowing this information is important, as
+it provides insight into income status on mental health, and stresses
+the importance of accessible mental health resources.
+
+# Grace Proposal 2
+
+Title: Comparing Firearm Mortality to Firearm Ownership by State 
+
+There is a notion that more firearms makes a country or state “safer”.
+However, having more firearms per capita has been proven to worsen
+mortality rates. Studies have shown that there is a significant,
+positive correlation between firearm ownership and firearm mortality
+rates (@hamilton2015firearms). This statistic has been heavily seen in
+adolescents, as firearms are the second leading cause of pediatric death
+in the US (@goyal2019state). Due to the surge in firearm mortality
+deaths, there has been a large push in the US government to create
+safer, more effective firearm laws that pertain to all states. Despite
+the overwhelming evidence that more guns only leads to more deaths,
+countries like the US still push the notion that having guns makes
+everyone safer. Providing more insight into this relationship will
+hopefully add to the evidence that firearm laws and firearm safety are
+crucial to reduce mortality rates.
+
+Research objective/question/hypothesis: The research objective is to
+look at the correlation of firearm mortality to firearm ownership by
+state. The hypothesis is that states with lower percentages of firearm
+owners will have less firearm moralities. Some analyses that could be
+used to test this hypothesis would be performing a correlation analysis
+and using a simple linear regression model to visualize the correlation.
+
+Proposed Methods: This study will use one data set from the Centers for
+Disease Control and Prevention
+([data](https://www.cdc.gov/nchs/pressroom/sosmap/firearm_mortality/firearm.htm))
+and one from the World Population Review
+([data](https://worldpopulationreview.com/state-rankings/gun-ownership-by-state#sources)).
+The scope of this study will be spatial, focused on the entire United
+States. The analysis will be conducted at the state level, as that
+variable is present in both data sets and will be used to join the two
+data sets together. In the CDC data, state is classified as “location”,
+while the WPR data classifies state as “state”, so some renaming of
+variables will need to take place before these data sets can be joined
+together. Once done, the data sets can be joined using the state names.
+Some statistical tests that could be used for analyzing the hypothesis
+are a Spearman or Pearson correlation depending on whether or not the
+data is normally distributed. The normality would be tested using the
+Shapiro test.
+
+Expected Outcomes: It is expected that states with less firearm owners
+will have less firearm moralities. This information would be useful in
+helping law makers make decisions regarding gun laws and gun safety.
+
+# Andrew Proposal 1
+
+Title: Analyzing the Quantity of Different Pollutants in Colorado
+Counties 
+
+This project looks to expand upon prior research done in the field of
+environmental injustice, specifically focused on the impact of unequal
+distribution of polluting industries in urban communities, where it is
+typically recorded that power plants, coal & waste burning facilities,
+railroads, and more are built in urban communities, resulting in higher
+quantities of pollutants (@aubourg2023community). It has been recorded
+that higher rates of respiratory illness can occur as a consequence of
+higher quantities of pollutants such as SO2 and NO2
+(@kipterer2025spatiotemporal). Understanding this makes it important to
+expand this work to Colorado communities to help us better understand
+which counties could need more specific environmental policy and advised
+behavior changes to improve local health. 
+
+Research objective/question/hypothesis: Our specific objective through
+this research project will be to determine if urban communities within
+the Colorado region are victims of environmental injustice that other
+communities in America are also victims too. We hypothesize that urban
+counties in Colorado will have higher average quantities of pollutants,
+CO, Ozone, NO2, and SO2 than non-urban counties. We aim to specifically
+use chi-squared tests to determine if there is a uni-variate correlation
+between urban counties and pollution levels. 
+
+Proposed Methods: The region of focus will be within Colorado, where we
+will take a combination of data from the US EPA that gives us data on
+Colorado Counties on a specific pollutant, 4 data types will be used,
+one for each of our desired pollutants, where then the data will be
+filtered to only show for desired variables which are county, daily
+observed count, county fips, Daily AQI value, and Lat & Long
+coordinates. From here, county fips codes will be used to do a table
+join to add our desired pollutants and their daily counts to a single
+data set, where we can conduct chi-squared tests on our different
+pollutants with county information to determine if there is a
+relationship between county. Based on whether there is a relationship,
+we can then plot our data using latitude and longitude data to
+effectively describe where there is the most pollution in Colorado.
+
+Expected Outcomes: It is expected that our research will find that there
+are higher average concentrations of one of our 4 pollutants within
+urban counties in Colorado. In turn, we hope to be able to attribute
+deleterious health effects to this information to provide a starting
+point for environmental justice reform in urban communities.
+
+# Andrew Proposal 2
+
+Title: Determining Causes for Lung Health Issues in Colorado Communities
+
+Studies have shown that various greenhouse gas pollutants contribute to
+increases in upper respiratory illnesses in various urban communities in
+children under 5. Specific gases that contribute to upper respiratory
+illness are SO2 and NO2 (@kipterer2025spatiotemporal). Other studies
+have also found that high concentrations of pollutants in certain
+communities have also been found to cause other respiratory illnesses
+and be correlated to higher cancer rates (@aubourg2023community). Our
+research seeks to determine if there is a relationship between
+greenhouse gases CO2, Ozone, SO2, and NO2 and increased risk of health
+issues such as asthma within the Colorado area. This research aims to
+inform public policy to accommodate individuals who live in areas that
+have higher concentration of these greenhouse gases in hopes that
+lung-related health issues will decrease. 
+
+Research objective/question/hypothesis: The objective of this study is
+to determine if any greenhouse gases that our society currently emits
+through pollution plants are related to any types of lung health-related
+issues. We hypothesize that either SO2, NO2, CO2, or ozone will be
+correlated to higher hospitalization and medical visit rates for
+lung-related issues. 
+
+Proposed Methods: The analysis will be conducted using a data set from
+the American Lung Association which has information about incidences of
+asthma, COPD, adult chronic lung disease, and lung cancer. US EPA data
+will be filtered, and cleaned to provide a data set with our 4
+greenhouse pollutants, their daily concentrations, API, and county
+categories. From here, a full join will be used on our data sets to
+allow for analysis. Our analysis will consist of a bivariate linear
+regression to determine if there is a significant amount of reported
+cases of lung health-related issues that can be attributed to one of our
+4 pollutants, we will use our lung health-related issues as a response
+variable, with our pollutants as our predictor variable. Normalization
+methods such as recipes the Spearman method may also be used to
+determine correlation and remove issues that may arise from unequal
+distribution. From here, pubr tools will be used to create visual
+graphics that visualize rates of lung health-related issues that were
+proven to be attributed to one of our 4 pollutants, based on the
+concentration of pollutants in specific counties.
+
+Expected Outcomes: We expect that at least 1 of our 4 lung-related
+health issues will be attributed to concentrations of one or more of our
+greenhouse gases. It is important to understand this, as it can allow
+for public policy to be specifically tailored to the immediate reduction
+of these pollutants, as well as allowing for air monitoring technology
+in Colorado to accurately record dangerous amounts of these pollutants
+in the air on given days.
+
+# Kendall Proposal 1
+
+Title: Analyzing the Impacts of Urban Green Space on Mental Health
+
+This project is significant in providing evidence for increased
+implementation of urban green space, especially in U.S. cities. It has
+been found that common stressors of living in an urban space can include
+an overcrowded and polluted environment, increased levels of violence,
+and diminished social support (@ventriglio2021urbanization). These
+stressors are unique to the conditions of living in urban areas and can
+be damaging to one’s mental health. If linked to an increase in mental
+health benefits, urban green space may provide a way to counteract the
+negative effects of urbanization. Urban green space already has many
+ecological benefits including reduction of the heat island effect,
+enhanced biodiversity, and carbon sequestration
+(@zhang2024comprehensive). Considering the known ecological benefits of
+urban green space, conducting this study will provide further evidence
+to local government and city planners that urban green space can be
+crucial in improving the mental health of residents and mitigating
+against the stressors of urbanization.  
+
+Research objective/question/hypothesis: The objective of this study is
+to analyze how access to green space affects the mental health of
+residents living in an urban environment. This will specifically be
+based on mental health indicators such as rates of anxiety and
+depression.
+
+Proposed Methods: Focusing on New York City, New York as the region of
+interest, this study will compare parks data
+([data](https://a816-dohbesp.nyc.gov/IndicatorPublic/data-explorer/mental-health/?id=2417#display=summary))
+to mental health data
+([data](https://nycopendata.socrata.com/Recreation/Parks-Properties/enfh-gkve/about_data)),
+comparing the levels of depression and anxiety by zip code. More
+specifically, this study will explore the impacts of urban green space
+based on size of the space, and proximity. This data will be compared to
+if green space impacts mental health in urban communities. This study
+will use a spatial scale by identifying differences among different zip
+codes within the same city. For statistical support we will use a
+Chi-Square test and run a linear regression.
+
+Expected Outcomes: Based on the research question, we expect to find
+that residents who have greater access to green space in urban areas
+will experience lower levels of depression than those with more limited
+access. This outcome is important as it will encourage city planners and
+municipal government leaders to implement more green space in dense
+urban centers.
+
+# Kendall Proposal 2
+
+Title: Analyzing how Proximity and Type of Power Plant Affect Soil
+Health 
+
+This project is significant because of its environmental and social
+implications. Environmentally, understanding how proximity to different
+types of power plants can provide more information on soil degradation.
+Currently, soil degradation is largely caused when pollutants such as
+sulfur dioxide, nitrogen oxides, and heavy metals enter the soil and
+alter its chemical composition (@osman2013soil). Additionally, soil
+degradation can lead to biodiversity loss and disrupt critical ecosystem
+services. Proximity to power plants could also have human health impacts
+as heavy metals and pollutants can enter the air and waterways, leading
+to respiratory illnesses, cardiovascular diseases, and other medical
+conditions (@barreira2017impacts). Having a greater awareness of how far
+reaching the ecological and human health impacts of power plants are,
+using soil health as an indicator, can create more educated land use
+planning and permitting. Additionally, if this study reveals that coal
+and natural gas power plants are causing soil degradation, the evidence
+could be used to support the need for more clean energy sources. 
+
+Research objective/question/hypothesis: A specific research question
+that we aim to understand through this study is, how do soil pH and
+organic content vary based on the proximity to power plants of different
+energy sources (coal, natural gas, nuclear, etc.)? We want to analyze
+how power plants are impacting the surrounding soil and how these
+impacts may vary by energy source. 
+
+Proposed Methods: We plan to carry out this study by narrowing the area
+of interest down to the state of Texas because of its variety of energy
+sources located within the state. Narrowing down the area of interest
+also provides a more similar baseline for soil health when comparing
+proximity to power plants. We plan to join the soil health data
+([data](https://datasets.wri.org/datasets/global-power-plant-database?map=eyJ2aWV3U3RhdGUiOnsibG9uZ2l0dWRlIjotODkuNjk3NDg0ODY1NzAwOTMsImxhdGl0dWRlIjozMi41ODEzNjI4NTc0Mzk1Nywiem9vbSI6My45MTQ1NTgzMzk3NDcyMjIsInBpdGNoIjowLCJiZWFyaW5nIjowLCJwYWRkaW5nIjp7InRvcCI6MCwiYm90dG9tIjowLCJsZWZ0IjowLCJyaWdodCI6MH19LCJiYXNlbWFwIjoibGlnaHQiLCJib3VuZGFyaWVzIjpmYWxzZSwibGFiZWxzIjoiZGFyayIsImFjdGl2ZUxheWVyR3JvdXBzIjpbeyJkYXRhc2V0SWQiOiI1MzYyM2RmZC0zZGY2LTRmMTUtYTA5MS02NzQ1N2NkYjU3MWYiLCJsYXllcnMiOlsiMmE2OTQyODktZmVjOS00YmZlLWE2ZDItNTZjMzg2NGVjMzQ5Il19XSwiYm91bmRzIjp7ImJib3giOm51bGwsIm9wdGlvbnMiOnt9fSwibGF5ZXJzUGFyc2VkIjpbWyIyYTY5NDI4OS1mZWM5LTRiZmUtYTZkMi01NmMzODY0ZWMzNDkiLHsidmlzaWJpbGl0eSI6dHJ1ZSwiYWN0aXZlIjp0cnVlLCJvcGFjaXR5IjoxLCJ6SW5kZXgiOjExfV1dfQ%3D%3D))
+and power plant data
+([data](https://catalog.data.gov/dataset/ncss-soil-characterization-database))
+by Texas only. This study would be on a spatial scale as it is comparing
+soil health based on geographic locations from a given power plant. We
+would analyze factors such as soil pH, organic carbon content, soil
+moisture, and the presence of heavy metals. In addition to proximity, We
+would like to analyze how varying energy sources (coal, natural gas,
+nuclear) impact these soil indicators differently. To test the
+hypothesis, some statistics we would use include frequency distribution
+to see how certain levels of the soil health indicators change in
+relation to distance from power plants. We could also use linear
+regression, t-test, and Chi-squared test.
+
+Expected Outcomes: Based on the above research question, we predict that
+coal power plants will lead to the most change within soil health.
+Understanding the impacts of power plants on soil is necessary in
+understanding how they contribute to soil degradation and if additional
+protections can be put in place to help maintain soil health. Protecting
+soil health is important as it contributes to nutrient cycling on a
+larger scale.
+
+# References
